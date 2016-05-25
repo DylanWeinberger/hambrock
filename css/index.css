@@ -62,21 +62,36 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	width: 100%;
 	border: 1px solid gray;
 	overflow: hidden;
+	position: relative;
 	margin-left: 2.5%;
 	margin-top: 25px;
 	height: 500px;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
-.slide {
-	width: 100%;
-	overflow: hidden;
+
+
+.slider img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+	transition:opacity 1.5s linear; 
+    -moz-transition:opacity 1.5s linear; 
+    -webkit-transition:opacity 1.5s linear;
 }
 
-.slide img {
-	width: 100%;
-	margin-left: 0%;
-	margin-top: 0px;
+.slider img{
+    opacity: 0; 
 }
+
+.slider img.active{
+    opacity: 1;
+}
+
 
 #content {
 	width: 66.666666%;
@@ -106,6 +121,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	height: 200px;
 	margin-top: 50px; 
 	background-color: #9C9C9C;
+	margin-left: 2.5%;
 }
 
 .foot ul {
