@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>Document</title>
 	<link href='https://fonts.googleapis.com/css?family=Istok+Web|Quicksand' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/pictures.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-	<script src="js/pictures.js"></script>
+	<script src="js/index.js"></script>
 </head>
 <body>
 	<div id="container">
@@ -15,18 +17,20 @@
 				<h1>Josh Hambrock</h1>
 				<p>Actor | Musician</p>
 			</div>
-			<nav>
-				<div class="nav">
+			<nav id="nav-main">
 					<ul>
 						<li><a href="index.html">Home</a></li>
-						<li><a href="#content">Pictures</a></li>
+						<li><a href="pictures.html">Pictures</a></li>
 						<li><a href="#">Video</a></li>
 						<li><a href="resume.html">Resume</a></li>
 						<li><a href="#">Music</a></li>
 						<li><a href="#">Contact</a></li>
 					</ul>
-				</div>
 			</nav>
+			<div id="nav-trigger">
+				<span>Menu</span>
+			</div>
+			<nav id="nav-mobile"></nav>
 		</section>
 		<section>
 			<div class="slider">
@@ -101,17 +105,33 @@
 
 		</section>
 	
-		<footer>
+		<footer class="defaultFoot">
 			<div class="foot">
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="#content">Pictures</a></li>
+					<li><a href="#content">Home</a></li>
+					<li><a href="pictures.html">Pictures</a></li>
 					<li><a href="#">Video</a></li>
 					<li><a href="resume.html">Resume</a></li>
 					<li><a href="#">Music</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
 				<p>&#9400 Josh Hambrock 2016</p>
+			
+				<p>Website Created by <a href="http://dylanweinberger.com">Dylan Weinberger</a></p>
+			</div>
+		</footer>
+	</div>
+		<footer class="mobileFoot">
+			<div class="foot">
+				<ul>
+					<li><a href="#content">Home</a></li>
+					<li><a href="pictures.html">Pictures</a></li>
+					<li><a href="#">Video</a></li>
+					<li><a href="resume.html">Resume</a></li>
+					<li><a href="#">Music</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				<p class="copyright">&#9400 Josh Hambrock 2016</p>
 				<br>
 				<p>Website Created by <a href="http://dylanweinberger.com">Dylan Weinberger</a></p>
 			</div>
